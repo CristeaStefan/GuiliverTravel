@@ -1,0 +1,171 @@
+nav {
+  display: flex;
+  justify-content: center; /* Center the content */
+  align-items: center;
+  background-color: rgba(37, 68, 82, 0.616);
+  padding: 10px 20px;
+  position: fixed; /* Fixes the navbar at the top */
+  top: 0;
+  width: 100%; /* Ensures full width */
+  z-index: 1000; /* Stays on top of other elements */
+}
+
+.logo-container {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  margin-right: 1300px;
+}
+
+.logo-container img {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-container span {
+  color: white;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.links a:hover {
+  background-color: #ddd;
+  color: black;
+  border-radius: 5px;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('backgroundimage.png'); /* Replace with your background image */
+  background-size: cover;
+  background-position: center;
+  padding-top: 60px; /* Adjust based on navbar height */
+}
+
+/* Contact Us Page styles */
+.contact-us-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 100px 50px;
+  max-width: 1300px;
+  margin: 0 auto;
+  margin-left: 160px;
+}
+
+.contact-info {
+  max-width: 45%;
+  text-align: left;
+  
+}
+
+.contact-info h1 {
+  font-size: 4em;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.contact-info p {
+  font-size: 1.5em;
+  margin-bottom: 40px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 5px;
+}
+
+.contact-form {
+  width: 55%; /* Occupies the remaining space */
+  background-color: rgba(75, 72, 72, 0.26); /* Semi-transparent background for the form */
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 55px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 95%;
+  padding: 15px;
+  font-size: 1em;
+  border-radius: 5px;
+  border: 1px solid #43404070;
+  color: rgb(255, 255, 255);
+  background-color: rgba(50, 49, 49, 0.295);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #0e0f0f;
+}
+
+.submit-button {
+  background-color: #01796f;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  margin: 20px 0 0;
+  display: block;
+  text-align: center;
+}
+
+.submit-button:hover {
+  background-color: #014d4a;
+}
+
+/* Social Media Column */
+.social-column {
+  position: fixed;
+  top: 50%;
+  left: 25px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.social-column a {
+  margin-bottom: 15px;
+}
+
+.social-column img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s ease;
+}
+
+.social-column .youtube {
+  width: 35px;
+  height: 40px;
+  margin-left: -2px;
+}

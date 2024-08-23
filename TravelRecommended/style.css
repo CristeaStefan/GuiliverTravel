@@ -1,0 +1,226 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(37, 68, 82, 0.616);
+    padding: 10px 20px;
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    width: 100%; /* Ensures full width */
+    z-index: 1000; /* Stays on top of other elements */
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-container img {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo-container span {
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+    border-radius: 5px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    padding: 5px 10px;
+    margin-right: 35px;
+  }
+  
+  #search-bar {
+    border: none;
+    padding: 10px;
+    border-radius: 67px;
+    outline: none;
+    font-size: 16px;
+    width: 250px;
+  }
+  
+  .search-container button {
+    background-color: #01796f;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .search-container button:hover {
+    background-color: #014d4a;
+  }
+  
+  .search-icon img {
+    filter: invert(41%) sepia(358%) saturate(543%) hue-rotate(87deg) brightness(58%) contrast(93%);
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('backgroundimage.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    padding-top: 60px; /* Adjust based on navbar height */
+  }
+  
+  .home-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 50px;
+    color: white;
+  }
+  
+  .home-page .first-text {
+    font-size: 4em;
+    font-weight: bold;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    margin-top: -155px;
+  }
+  
+  .home-page .second-text {
+    font-size: 1.1em;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    max-width: 400px;
+    margin-left: 100px;
+  }
+  
+  .book-button {
+    background-color: #01796f;
+    color: white;
+    margin-top: 0px;
+    margin-left: 100px;
+    border: none;
+    text-align: center;
+    height: 40px;
+    width: 160px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .book-button:hover {
+    background-color: #014d4a;
+  }
+  
+  /* Social Media Column */
+  .social-column {
+    position: absolute;
+    top: 60%;
+    left: 25px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .social-column a {
+    margin-bottom: 15px;
+  }
+  
+  .social-column img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+    transition: transform 0.3s ease;
+  }
+  .social-column .youtube {
+    width: 35px; /* Increase the width for the YouTube icon */
+    height: 40px; /* Increase the height for the YouTube icon */
+    margin-left: -2px;
+  } 
+.results-container {
+    display: none; /* Hide the container initially */
+    flex-direction: column; /* Stack the results vertically */
+    align-items: center; /* Center the cards horizontally */
+    position: absolute;
+    margin-top: 40px; /* Space above the container */
+    background-color: transparent; /* No background color */
+    border-radius: 5px;
+    width: 27%; /* Slightly less than full width to keep it within the page margins */
+    max-width: 750px; /* Maximum width to prevent it from becoming too wide */
+    margin-right: 40px; /* Center horizontally */
+    margin-left: 1020px;
+}
+
+
+.result-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; /* Space between cards */
+    width: 100%; /* Make it full width within the container */
+    max-width: 750px; /* Max width for individual cards */
+    overflow: hidden; /* Hide any overflow for rounded corners */
+}
+
+
+.result-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 2px solid #ccc; /* Border below the image */
+    height: 70%;
+}
+
+.result-card h3 {
+    font-size: 1.5em;
+    margin: 15px;
+    color: #333;
+}
+
+.result-card p {
+    font-size: 1em;
+    margin: 0 15px 15px 15px;
+    color: #666;
+}
+
+.visit-button {
+    display: block;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    padding: 10px 20px;
+    background-color: #01796f;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+    background-color: #014d4a;
+}
